@@ -10,4 +10,4 @@
 
 # **Run**
 
-`nodejs SignAndTransfer.js`
+`nodejs src/SignAndTransfer.js`
