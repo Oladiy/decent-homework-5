@@ -49,8 +49,8 @@ async function signAndTransfer(sendersData, receiverData) {
             console.log('\n\nSigned transaction:\n', transaction.toJSON(),'\n\n')
 
             //Сериализуем транзакцию и выполняем перевод по введенному адресу
-            //const serializedTransaction = transaction.serialize();
-            //await transfer(reject, resolve, serializedTransaction.toString('hex'));
+            const serializedTransaction = transaction.serialize();
+            await transfer(reject, resolve, serializedTransaction.toString('hex'));
         });
     });
 }
